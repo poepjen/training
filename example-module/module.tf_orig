@@ -7,7 +7,3 @@ resource "null_resource" "null" {
     command = "${var.command}"
   }
 }
-
-output "my_output" {
-  value = "${null_resource.null.command}"
-}
